@@ -1,0 +1,1 @@
+{"translation_en":["key"],"translation_fr":["key","file_found"],"translation_main":["key","destination"],"user_main":["email","login"]}
