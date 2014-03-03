@@ -6,13 +6,6 @@
 ;database => database / schema witch will be used to access to datas
 
 
-;[default]
-;driver=oracle
-;hostname=//SBCCH10186.ad.sys:1523/ADELPREP
-;user=PHP
-;password=JGMWEB
-;database=
-
 
 [mysql_write]
 driver=mysql
