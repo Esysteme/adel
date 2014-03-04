@@ -1,0 +1,3 @@
+composer.lock
+configuration/db.config.ini.php
+configuration/webroot.config.php
