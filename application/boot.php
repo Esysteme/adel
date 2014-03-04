@@ -220,7 +220,8 @@ try {
 
         $acl = new Acl(CONFIG . "acl.config.ini");
        // echo $GLOBALS['_SITE']['id_group'].' -- '. $_SYSTEM['controller'] . "/" . $_SYSTEM['action'];
- 
+
+       echo $acl; 
 
         if (!$acl->isAllowed($GLOBALS['_SITE']['id_group'], $_SYSTEM['controller'] . "/" . $_SYSTEM['action'])) {
             if ($acl->checkIfResourceExist($_SYSTEM['controller'] . "/" . $_SYSTEM['action'])) {

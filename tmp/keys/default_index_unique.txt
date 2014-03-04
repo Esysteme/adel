@@ -1,1 +1,1 @@
-{"translation_en":["key"],"translation_fr":["key","file_found"],"translation_main":["key","destination"],"user_main":["email","login"]}
+{"history_etat":[],"translation_en":["key","file_found"],"translation_fr":["key","file_found"],"translation_main":["key","destination"],"user_main":["email","login"]}

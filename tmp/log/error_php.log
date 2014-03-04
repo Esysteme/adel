@@ -45,3 +45,40 @@
 [03-Mar-2014 20:07:32 Europe/Paris] PHP Warning:  include_once(): Failed opening '/data/www/adelFW/application/model/translation_fr.php' for inclusion (include_path='/home/www/adelFW/vendor/phpunit/php-text-template:/home/www/adelFW/vendor/phpunit/phpunit-mock-objects:/home/www/adelFW/vendor/phpunit/php-timer:/home/www/adelFW/vendor/phpunit/php-token-stream:/home/www/adelFW/vendor/phpunit/php-file-iterator:/home/www/adelFW/vendor/phpunit/php-code-coverage:/home/www/adelFW/vendor/phpunit/phpunit:/home/www/adelFW/vendor/symfony/yaml:.:/home/www/adel/include') in /home/www/adelFW/vendor/glial/glial/Glial/Sgbd/Sql/Sql.php on line 152
 [03-Mar-2014 20:07:32 Europe/Paris] PHP Fatal error:  Class 'application\model\translation_fr' not found in /home/www/adelFW/vendor/glial/glial/Glial/Synapse/Singleton.php on line 27
 [03-Mar-2014 20:07:59 Europe/Paris] PHP Notice:  Undefined variable: acl in /home/www/adelFW/application/view/Home/index.view.php on line 3
+[03-Mar-2014 22:33:50 Europe/Paris] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/www/adel/vendor/glial/glial/Glial/Sgbd/Sql/Mysql/Mysql.php on line 94
+[03-Mar-2014 22:33:50 Europe/Paris] PHP Stack trace:
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   1. {main}() /home/www/adel/application/webroot/index.php:0
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   2. include() /home/www/adel/application/webroot/index.php:78
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   3. Glial\I18n\I18n::load() /home/www/adel/application/boot.php:127
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   4. Glial\I18n\I18n::testTable() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:573
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   5. Glial\Sgbd\Sql\Mysql\Mysql->getListTable() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:489
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   6. Glial\Sgbd\Sql\Mysql\Mysql->sql_fetch_array() /home/www/adel/vendor/glial/glial/Glial/Sgbd/Sql/Mysql/Mysql.php:159
+[03-Mar-2014 22:33:50 Europe/Paris] PHP   7. mysqli_fetch_array() /home/www/adel/vendor/glial/glial/Glial/Sgbd/Sql/Mysql/Mysql.php:94
+[04-Mar-2014 09:53:57 Europe/Paris] PHP Warning:  include_once(/home/www/adel/application/model/translation_fr.php): failed to open stream: No such file or directory in /home/www/adel/vendor/glial/glial/Glial/Sgbd/Sql/Sql.php on line 152
+[04-Mar-2014 09:53:57 Europe/Paris] PHP Stack trace:
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   1. {main}() /home/www/adel/application/webroot/index.php:0
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   2. include() /home/www/adel/application/webroot/index.php:78
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   3. Glial\Synapse\FactoryController::rootNode() /home/www/adel/application/boot.php:261
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   4. Glial\Synapse\Controller->set_layout() /home/www/adel/vendor/glial/glial/Glial/Synapse/FactoryController.php:62
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   5. Glial\I18n\I18n::getTranslation() /home/www/adel/vendor/glial/glial/Glial/Synapse/Controller.php:238
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   6. Glial\I18n\I18n::save_db() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:430
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   7. Glial\Sgbd\Sql\Sql->sql_save() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:480
+[04-Mar-2014 09:53:57 Europe/Paris] PHP Warning:  include_once(): Failed opening '/home/www/adel/application/model/translation_fr.php' for inclusion (include_path='/home/www/adel/vendor/phpunit/php-text-template:/home/www/adel/vendor/phpunit/phpunit-mock-objects:/home/www/adel/vendor/phpunit/php-timer:/home/www/adel/vendor/phpunit/php-token-stream:/home/www/adel/vendor/phpunit/php-file-iterator:/home/www/adel/vendor/phpunit/php-code-coverage:/home/www/adel/vendor/phpunit/phpunit:/home/www/adel/vendor/symfony/yaml:.:/usr/share/php:/usr/share/pear') in /home/www/adel/vendor/glial/glial/Glial/Sgbd/Sql/Sql.php on line 152
+[04-Mar-2014 09:53:57 Europe/Paris] PHP Stack trace:
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   1. {main}() /home/www/adel/application/webroot/index.php:0
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   2. include() /home/www/adel/application/webroot/index.php:78
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   3. Glial\Synapse\FactoryController::rootNode() /home/www/adel/application/boot.php:261
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   4. Glial\Synapse\Controller->set_layout() /home/www/adel/vendor/glial/glial/Glial/Synapse/FactoryController.php:62
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   5. Glial\I18n\I18n::getTranslation() /home/www/adel/vendor/glial/glial/Glial/Synapse/Controller.php:238
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   6. Glial\I18n\I18n::save_db() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:430
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   7. Glial\Sgbd\Sql\Sql->sql_save() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:480
+[04-Mar-2014 09:53:57 Europe/Paris] PHP Fatal error:  Class 'application\model\translation_fr' not found in /home/www/adel/vendor/glial/glial/Glial/Synapse/Singleton.php on line 27
+[04-Mar-2014 09:53:57 Europe/Paris] PHP Stack trace:
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   1. {main}() /home/www/adel/application/webroot/index.php:0
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   2. include() /home/www/adel/application/webroot/index.php:78
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   3. Glial\Synapse\FactoryController::rootNode() /home/www/adel/application/boot.php:261
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   4. Glial\Synapse\Controller->set_layout() /home/www/adel/vendor/glial/glial/Glial/Synapse/FactoryController.php:62
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   5. Glial\I18n\I18n::getTranslation() /home/www/adel/vendor/glial/glial/Glial/Synapse/Controller.php:238
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   6. Glial\I18n\I18n::save_db() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:430
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   7. Glial\Sgbd\Sql\Sql->sql_save() /home/www/adel/vendor/glial/glial/Glial/I18n/I18n.php:480
+[04-Mar-2014 09:53:57 Europe/Paris] PHP   8. Glial\Synapse\Singleton::getInstance() /home/www/adel/vendor/glial/glial/Glial/Sgbd/Sql/Sql.php:160
