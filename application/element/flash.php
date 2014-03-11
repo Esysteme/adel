@@ -1,17 +1,12 @@
 <?php
 
-
-
 $doublon = array();
 
 
-debug($data);
 
-foreach($data as $line)
-{
-   // if (! in_array($line['msg'],$doublon))
-   // {
-    //    $doublon[] = $line['msg'];
+foreach ($data as $line) {
+    if (!in_array($line['msg'], $doublon)) {
+        $doublon[] = $line['msg'];
         echo "
 
         <div class=\"alert " . $line['type_error'] . "\">
@@ -25,5 +20,5 @@ foreach($data as $line)
         echo __("Close");
         echo "</a>
         </div>";
- //   }
+    }
 }

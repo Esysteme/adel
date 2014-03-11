@@ -14,7 +14,7 @@
 
 if (! defined('WWW_ROOT'))
 {
-    define('WWW_ROOT', "/adel/");
+    define('WWW_ROOT', "/adelFW/");
 }
 
 

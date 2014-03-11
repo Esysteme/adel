@@ -10,8 +10,8 @@ class Home extends Controller
 		$this->layout_name = 'default';
 		
 		
-		//$this->title = __("Home");
-		//$this->ariane = " > ".__("Welcome to my first page with Glial !");
+		$this->title = __("Home");
+		$this->ariane = " > ".__("Welcome to my first page with Glial !");
 		
 		//$this->javascript = array("");
 		

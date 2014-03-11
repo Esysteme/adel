@@ -1,11 +1,11 @@
 </div>
 
+
 <footer>
-
-
+footer
 </footer>
 
-
+</div>
 
 </div>
 </body>

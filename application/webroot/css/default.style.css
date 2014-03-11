@@ -1,3 +1,200 @@
-body {background:#ccc}
-#all {width:1200px; margin:auto; background:#fff}
+/* @import url(http://reset5.googlecode.com/hg/reset.min.css); */
+/* reset5 Â© 2011 opensource.736cs.com MIT */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block;}nav ul{list-style:none;}ol{list-style:decimal;}ul{list-style:disc;}ul ul{list-style:circle;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}ins{text-decoration:underline;}del{text-decoration:line-through;}mark{background:none;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select,a img{vertical-align:middle;}
+/* input[type=submit],input[type=button],button{margin:0!important;padding:0!important;} */
 
+* {font-family: arial;}
+
+a {text-decoration: none}
+pre {font-family: courrier}
+body {background:#ccc;  font-size:13px; }
+#all {width:1200px; margin:auto;background: #fff; box-shadow: 0 0 20px #000;margin-top:10px;}
+
+#headline { height:40px}
+#headline nav {display: inline;  }
+#headline h1 {display: inline; font-size:24px;}
+#headline ul {display: inline; }
+#headline ul li{display: inline; line-height: 30px }
+
+
+#title {padding:4px}
+#title, #title a{background: url("pictures/overlay-black.png") repeat-x scroll left bottom #003D71;  ; color:#fff;}
+#ariane { color:#fff;}
+
+
+#content {padding: 10px}
+
+.left {float:right}
+
+
+
+
+/**************** notification 2 ***************************/
+
+
+
+.alert{ margin: 0 0 10px 0; color: #c4bdb0; font-size: 11px; overflow: hidden;
+		-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+		-moz-box-shadow: 0 0 10px #555;
+		-webkit-box-shadow: 0 0 10px #555; 
+		box-shadow: 0 0 10px #555;
+}
+.alert-inner {-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+
+.alert .alert-inner { width: 950px; float: left; -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; }
+.alert .alert-message { padding: 15px 10px 15px 50px; }
+.alert .alert-message .title strong { font-size: 14px; font-weight:700 }
+.alert .alert-message a { color: #ffd800; }
+.alert .alert-close {display: block; margin: 12px 22px 0 0; width: 68px; text-align: right; float: right; color: #fff; letter-spacing:2px; text-transform: uppercase; background: url("pictures/notification/close-small.png") no-repeat right center; padding-right: 16px; }
+
+
+.alert div.title {margin: 0 0 10px 0;}
+
+.alert.error { color: #c4bdb0; background: #530901 url("pictures/notification/alert-error-close.png") 0 0 repeat-x; }
+.alert.error strong { color: #fff; }
+.alert.error .alert-inner { background: #732e03 url("pictures/notification/alert-error.png") 0 0 repeat-x; }
+.alert.error .alert-message { background: url("pictures/notification/error.png") 13px 18px no-repeat; }
+.alert.error div { color: #fff; }
+.alert.error .alert-message a { color: #ffd800; }
+
+.alert.caution { color: #6f3900; background: #ea8e00 url("pictures/notification/alert-caution-close.png") 0 0 repeat-x; }
+.alert.caution strong { color: #000; }
+.alert.caution .alert-inner { background: #efa700 url("pictures/notification/alert-caution.png") 0 0 repeat-x; }
+.alert.caution .alert-message { background: url("pictures/notification/warning.png") 13px 18px no-repeat; }
+.alert.caution div { color: #000; }
+.alert.caution .alert-message a { color: #006c9d; }
+
+.alert.success { color: #adbda8; background: #2f4728 url("pictures/notification/alert-success-close.png") 0 0 repeat-x; }
+.alert.success strong { color: #fff; }
+.alert.success .alert-inner { background: #4c7141 url("pictures/notification/alert-success.png") 0 0 repeat-x; }
+.alert.success .alert-message { background: url("pictures/notification/success.png") 13px 18px no-repeat; }
+.alert.success div { color: #fff; }
+.alert.success .alert-message a { color: #ffd800; }
+
+.alert a.alert-close {text-decoration:none;}
+
+.alert-message table td, .alert-message table th{border:#fff 1px solid; padding:2px; color:#fff}
+.alert-message table th {font-weight:700;}
+.alert-message table {margin: 4px 0}
+
+.alert-message li{color:#fff}
+
+
+/********* bouton *******/
+
+
+.button {
+	-moz-border-radius:5px 5px 5px 5px;
+	-moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
+	border-radius:5px 5px 5px 5px;
+	color:#FFFFFF !important;
+	cursor:pointer;
+	display:inline-block;
+	font-weight:bold;
+	overflow:visible;
+	position:relative;
+	text-decoration:none !important;
+	width:auto;
+    padding:4px;
+}
+
+.overtop{background:url("pictures/overlay-white.png") repeat-x scroll 0 0 transparent;}
+.overbottom{background:url("pictures/overlay-black.png") repeat-x scroll left bottom transparent;}
+
+
+.button.overlayW, .button.overlayB:hover {background:url("pictures/overlay-white.png") repeat-x scroll 0 0 transparent;}
+.button.overlayB, .button.overlayW:hover {background:url("pictures/overlay-black.png") repeat-x scroll left bottom transparent;}
+
+.button span.sign:before {
+	content:"»&nbsp;";
+	font-size:16px;
+	line-height:5px;
+}
+
+.button.btWhite, .button.btWhite:hover {background-color:#FFFFFF;border:1px solid #eee;color:#FF5D00 !important;}
+.button.btGreyLite, .button.btGreyLite:hover {background-color:#ddd;border:1px solid #bbb !important;color:#000 !important;}
+.button.btOrange, .button.btOrange:hover {background-color:#FF5D00;border:1px solid #D45500;}
+.button.btGrey, .button.btGrey:hover {background-color:#666666;border:1px solid #333333;}
+.button.btGreen, .button.btGreen:hover {background-color:#58A61E;border:1px solid #4B8D1A;}
+.button.btBlue, .button.btBlue:hover {background-color:#3487BC;border:1px solid #2D75A2;}
+.button.btBlack, .button.btBlack:hover {background-color:#000000;border:1px solid #000000;}
+.button.btRed, .button.btRed:hover {background-color:#D6071B;border:#D6071B 1px solid ;}
+.button.btBlueTest, .button.btBlueTest:hover {background-color:#086EB8;border:1px solid #1D65A2;}
+.button.btMenu, .button.btMenu:hover {background-color:#003D71;border:1px solid #225d91;}
+
+.btBlueTest a{color:#fff}
+button  a{text-decoration: none;}
+
+.button.btMedium {font-size:12px;padding:4px 10px;margin:1px;}
+.button span.sign:before {content:"» ";font-size:16px;line-height:5px;}
+
+
+/****** feldset *******/
+
+
+fieldset {
+display: block;
+-webkit-margin-start: 2px;
+-webkit-margin-end: 2px;
+-webkit-padding-before: 0.35em;
+-webkit-padding-start: 0.75em;
+-webkit-padding-end: 0.75em;
+-webkit-padding-after: 0.625em;
+border: 2px groove threedface;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+min-width: -webkit-min-content;
+}
+
+
+fieldset {
+margin-top: 1em;
+border-radius: 4px 4px 0 0;
+-moz-border-radius: 4px 4px 0 0;
+-webkit-border-radius: 4px 4px 0 0;
+padding: 5px;
+border: #aaa solid 1px;
+padding: 1.5em;
+background: #ECF1F8;
+text-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 1px 1px 2px #fff inset;
+-webkit-box-shadow: 1px 1px 2px #fff inset;
+box-shadow: 1px 1px 2px #fff inset;
+}
+
+
+.tblFooters {
+font-weight: normal;
+color: #000000;
+background: #4771BB;
+}
+
+
+fieldset.tblFooters {
+margin-top: 0;
+margin-bottom: 0.5em;
+border-top: 0;
+text-align: right;
+float: none;
+clear: both;
+-webkit-border-radius: 0 0 4px 4px;
+-moz-border-radius: 0 0 4px 4px;
+border-radius: 0 0 4px 5px;
+}
+
+fieldset legend {
+font-weight: bold;
+color: #444;
+padding: 5px 10px;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border: 1px solid #aaa;
+background-color: #fff;
+-moz-box-shadow: 3px 3px 15px #bbb;
+-webkit-box-shadow: 3px 3px 15px #bbb;
+box-shadow: 3px 3px 15px #bbb;
+}
